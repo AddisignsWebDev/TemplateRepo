@@ -1,0 +1,77 @@
+:root {
+    --white-bg-color: #fff;
+    --black-bg-color: rgb(0, 0, 0);
+    --lightBlue-bg-color: rgb(71, 135, 255);
+    --blue-bg-color: rgb(0, 58, 165);
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--white-bg-color);
+}
+
+/* utilities */
+
+.gap-at-btm {
+    margin-bottom: 15px;
+}
+
+.black-bckgrnd {
+    background-color: var(--black-bg-color);
+}
+
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f {
+    display: flex;
+    align-items: center;
+}
+
+.rnd-corners {
+    border-radius: 5px;
+}
+
+
+
+/* buttons */
+
+.btn {
+    user-select: none;
+    width: 170px;
+    height: 40px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(1, 58, 18);
+    background-image: linear-gradient(rgb(99, 207, 27), rgb(24, 172, 19));
+    transition: outline 0.1s;
+    margin: 5px;
+}
+
+.btn:hover {
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.137);
+    outline: 3px solid rgb(255, 217, 0);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: var(--blue-bg-color);
+    color: rgb(58, 53, 9);
+    cursor: pointer;
+    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.288);
+    border: 1px solid rgb(92, 60, 0);
+    background-image: linear-gradient(90deg, rgb(231, 150, 0), rgb(255, 217, 0));
+}
+
+.btn:focus {
+    outline: 3px solid rgb(255, 217, 0);
+}
